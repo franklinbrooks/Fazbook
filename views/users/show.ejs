@@ -1,17 +1,26 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Title goes here</title>
+    <title>title</title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
     <h1>Welcome to fazbook</h1>
+    <br>
+    <br>
     <a href="/users">Home</a>
+    <br>
+    <br>
       <div>
         <span><%= user.firstName %></span>
         <span><%= user.lastName %></span>
         <span><%= user.email %></span>
         <span><%= user.dob %></span>
+        <br>
+        <br>
+        <a href="<%= '/users/' + user.id + '/edit' %>">Edit User Info</a>
+        <br>
+        <br>
         <form action="<%= '/users/' + user.id + '?_method=DELETE' %>" method="POST">
           <button type="submit" value="X">Delete User</button>
         </form>
