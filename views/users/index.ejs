@@ -6,5 +6,14 @@
   </head>
   <body>
     <h1>Welcome to fazbook</h1>
+    <a href="/users/new">Create a new user<!-- <button>Create a new user</button> --></a>
+    <% users.forEach(function(user) { %>
+      <div>
+        <span><%= user.firstName %></span>
+        <span><%= user.lastName %></span>
+        <span><%= user.email %></span>
+        <span><%= user.dob %></span>
+      </div>
+  <%  }) %>
   </body>
 </html>

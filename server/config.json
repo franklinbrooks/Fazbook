@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "fcb",
+    "password": null,
+    "database": "fazbook_development",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "fcb",
+    "password": null,
+    "database": "fazbook_development",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "fcb",
+    "password": null,
+    "database": "fazbook_development",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  }
+}
