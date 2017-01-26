@@ -27,4 +27,12 @@ router.post('/', function(req, res, next) {
   });
 });
 
+router.delete('/:id', function(req, res, next) {
+  models.User.destroy({
+    where: { id: req.params.id }
+  }).then(function(user) {
+    res.redirect('/users');
+  });
+});
+
 module.exports = router;
