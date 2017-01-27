@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= title %></title>
+    <title><%= title %></title> <!-- referenced line 9 of users.js -->
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
@@ -9,17 +9,14 @@
     <a href="/users/new">Create new user</a>
     <br>
     <br>
-    <% users.forEach(function(user) { %>
+    <% users.forEach(function(user) { %>  <!-- loops over user db and shows relevant data -->
       <div>
         <span><%= user.firstName %></span>
         <span><%= user.lastName %></span>
         <a href="<%= '/users/show/' + user.id %>">Visit user page</a>
-<!--         <form action="<%= '/users/' + user.id + '?_method=DELETE' %>" method="POST">
-          <button type="submit" value="X">Delete User</button>
-        </form> -->
         <br>
         <br>
       </div>
-  <%  }) %>
+  <%  }) %>  <!-- closes forEach loop -->
   </body>
 </html>

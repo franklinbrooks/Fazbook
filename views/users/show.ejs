@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>title</title>
+    <title><% title %></title> <!-- referenced line 43 of users.js -->
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
@@ -22,7 +22,7 @@
         <br>
         <br>
         <form action="<%= '/users/' + user.id + '?_method=DELETE' %>" method="POST">
-          <button type="submit" value="X">Delete User</button>
+          <button type="submit">Delete User</button>
         </form>
       </div>
   </body>
